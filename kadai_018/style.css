@@ -1,11 +1,10 @@
 /* ===== Step3. 一番上の図形へのスタイル適用 ===== */
-
 #top {
-  width: 800px;
+  width: 800px;               /* 横幅800px */
   background-color: #dcc9f4;  /* 紫 */
-  margin: 20px auto;          /* 上下に20pxの余白＋中央寄せ */
+  margin: 20px auto;          /* 上下20pxの余白＋中央寄せ */
   text-align: center;         /* 中のp要素を中央揃え */
-  padding: 20px 0;            /* 上下に余白を追加 */
+  padding: 20px 0;            /* 上下に余白 */
 }
 
 .top-child {
@@ -13,32 +12,32 @@
   background-color: #ffd9df;  /* ピンク */
   display: inline-block;      /* 横並び */
   margin: 10px;               /* 上下左右の余白 */
-  padding: 10px 0;            /* テキスト上下に余白 */
+  padding: 10px 0;            /* テキスト上下の余白 */
 }
 
 
 /* ===== Step4. 真ん中の図形へのスタイル適用 ===== */
 
-/* Step4-1. 真ん中の図形のデザインを調整 */
+/* Step4-1. middle全体 */
 #middle {
   width: 800px;
   height: 800px;
   background-color: #ffd9df;  /* ピンク */
-  margin: 20px auto;          /* 上下に20pxの余白＋中央寄せ */
-  position: relative;         /* 子要素の絶対配置の基準に */
+  margin: 20px auto;           /* 上下20pxの余白＋中央寄せ */
+  position: relative;          /* 子要素のabsolute基準 */
 }
 
-/* 子要素共通設定 */
+/* middle内の共通ブロック */
 #middle-child01,
 #middle-child02,
 #middle-child03 {
   width: 200px;
   height: 200px;
   background-color: #87ceeb;  /* 水色 */
-  position: absolute;         /* 親要素からの位置指定が可能に */
+  position: absolute;          /* 親要素からの位置指定が可能 */
 }
 
-/* Step4-2. 真ん中の図形の位置を指定 */
+/* Step4-2. middle内の位置指定 */
 #middle-child01 {
   top: 100px;
   left: 100px;
@@ -55,15 +54,15 @@
 }
 
 
-/* ===== Step5-1. 一番下の図形のデザインを調整 ===== */
+/* ===== Step5. 一番下の図形へのスタイル適用 ===== */
 
-/* bottom全体 */
+/* Step5-1. bottom全体 */
 #bottom {
   width: 800px;              /* 横幅800px */
   height: 300px;             /* 高さ300px */
   margin: 0 auto;            /* 画面中央に配置 */
   background-color: #87ceeb; /* 水色 */
-  padding-top: 20px;         /* 上に余白を追加（任意） */
+  padding-top: 20px;         /* 上に余白（任意） */
 }
 
 /* bottom内の共通ブロック */
@@ -76,16 +75,14 @@
   margin-bottom: 10px;        /* 縦方向の間隔 */
 }
 
-/* ===== Step5-2. 一番下の図形の位置を指定 ===== */
-
-/* 2番目のブロックを左から200pxずらす */
+/* Step5-2. bottom内の位置指定 */
+/* 左方向へのずれのみrelativeで指定 */
 #bottom-child02 {
   position: relative;
-  left: 200px;
+  left: 200px;               /* 左から200pxずらす */
 }
 
-/* 3番目のブロックを左から400pxずらす */
 #bottom-child03 {
   position: relative;
-  left: 400px;
+  left: 400px;               /* 左から400pxずらす */
 }
