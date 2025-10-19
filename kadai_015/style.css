@@ -1,0 +1,39 @@
+/* 全体の設定 */
+:root {
+  font-size: 20px; /* ルート要素のフォントサイズ */
+}
+
+body {
+  font-family: "Arial", "Meiryo", sans-serif;
+  text-align: center; /* テキストを中央寄せ */
+  color: #000;
+}
+
+/* h1 の装飾 */
+h1 {
+  font-family: 'Josefin Sans', sans-serif; /* Googleフォント */
+  font-size: 2em; /* ルート要素の2倍 */
+  letter-spacing: 1.2em; /* 文字の大きさに対して1.2倍 */
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3); /* 影を追加 */
+  border-bottom: 3px solid rgb(115, 115, 114); /* 下線 */
+  margin-bottom: 20px;
+}
+
+/* カラー指定 */
+.blue {
+  color: skyblue; /* スカイブルー */
+}
+
+.pink {
+  color: rgb(255, 192, 203); /* ピンク */
+}
+
+/* basic 内の情報を太字 */
+#basic p {
+  font-weight: bold;
+}
+
+/* basic 以外の p は通常の太さ */
+body > p {
+  font-weight: normal;
+}
