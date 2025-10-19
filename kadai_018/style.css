@@ -1,4 +1,60 @@
-* ===== Step5. 一番下の図形へのスタイル適用 ===== */
+/* ===== Step3. 一番上の図形へのスタイル適用 ===== */
+
+#top {
+  width: 800px;
+  background-color: #dcc9f4;  /* 紫 */
+  margin: 20px auto;          /* 上下に20pxの余白＋中央寄せ */
+  text-align: center;         /* 中のp要素を中央揃え */
+  padding: 20px 0;            /* 上下に余白を追加 */
+}
+
+.top-child {
+  width: 20%;                 /* 親要素の20%幅 */
+  background-color: #ffd9df;  /* ピンク */
+  display: inline-block;      /* 横並び */
+  margin: 10px;               /* 上下左右の余白 */
+  padding: 10px 0;            /* テキスト上下に余白 */
+}
+
+
+/* ===== Step4. 真ん中の図形へのスタイル適用 ===== */
+
+/* Step4-1. 真ん中の図形のデザインを調整 */
+#middle {
+  width: 800px;
+  height: 800px;
+  background-color: #ffd9df;  /* ピンク */
+  margin: 20px auto;          /* 上下に20pxの余白＋中央寄せ */
+  position: relative;         /* 子要素の絶対配置の基準に */
+}
+
+/* 子要素共通設定 */
+#middle-child01,
+#middle-child02,
+#middle-child03 {
+  width: 200px;
+  height: 200px;
+  background-color: #87ceeb;  /* 水色 */
+  position: absolute;         /* 親要素からの位置指定が可能に */
+}
+
+/* Step4-2. 真ん中の図形の位置を指定 */
+#middle-child01 {
+  top: 100px;
+  left: 100px;
+}
+
+#middle-child02 {
+  top: 300px;
+  left: 300px;
+}
+
+#middle-child03 {
+  top: 500px;
+  left: 500px;
+}
+
+/* ===== Step5. 一番下の図形へのスタイル適用 ===== */
 
 /* bottom全体 */
 #bottom {
@@ -7,27 +63,25 @@
   background-color: #87ceeb;  /* 水色 */
   margin: 0 auto;             /* 中央寄せ */
   padding-top: 20px;
-  text-align: left;           /* 横並びの基準に */
 }
 
-/* bottom内の紫四角共通設定 */
+/* bottom内の共通ブロック */
 #bottom-child01,
 #bottom-child02,
 #bottom-child03 {
-  width: 400px;               /* 横幅 */
-  height: 100px;              /* 高さ */
-  background-color: #e5dcf0;  /* 紫 */
-  display: inline-block;      /* 横並び */
-  margin-right: 10px;         /* 横方向の間隔 */
+  width: 400px;
+  height: 100px;
+  background-color: #e5dcf0;  /* 薄紫 */
+  margin-bottom: 10px;        /* 縦間隔 */
 }
 
-/* 左方向にずらす */
+/* 2番目と3番目を左にずらす */
 #bottom-child02 {
   position: relative;
-  left: 200px;                /* 本来位置より右に200pxずらす */
+  left: 200px;
 }
 
 #bottom-child03 {
   position: relative;
-  left: 400px;                /* 本来位置より右に400pxずらす */
+  left: 400px;
 }
