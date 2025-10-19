@@ -12,7 +12,7 @@ body {
 /* h1 の装飾 */
 h1 {
   font-family: 'Josefin Sans', sans-serif; /* Googleフォント */
-  font-size: 2em; /* ルート要素の2倍 */
+  font-size: 2rem; /* ルート要素の2倍 */
   letter-spacing: 1.2em; /* 文字の大きさに対して1.2倍 */
   text-shadow: 2px 2px 4px rgba(0,0,0,0.3); /* 影を追加 */
   border-bottom: 3px solid rgb(115, 115, 114); /* 下線 */
