@@ -44,44 +44,69 @@
   left: 100px;
 }
 
-#middle-child02 {
-  top: 300px;
-  left: 300px;
-}
+/* ===== Step5. 一番下の図形へのスタイル適用（最終・階段状） ===== */
 
-#middle-child03 {
-  top: 500px;
-  left: 500px;
-}
 
-/* ===== Step5. 一番下の図形へのスタイル適用 ===== */
 
-/* bottom全体 */
 #bottom {
-  width: 800px;
-  height: 300px;
-  background-color: #87ceeb;  /* 水色 */
-  margin: 0 auto;             /* 中央寄せ */
-  padding-top: 20px;
+
+ width: 800px;
+
+ background-color: #87ceeb; /* 水色 */
+
+ margin: 0 auto;
+
+ padding-top: 0;       /* 上の余白もなし */
+
 }
 
-/* bottom内の共通ブロック */
+
+
+/* 紫の長方形（上下の隙間なし・階段状） */
+
 #bottom-child01,
+
 #bottom-child02,
+
 #bottom-child03 {
-  width: 400px;
-  height: 100px;
-  background-color: #e5dcf0;  /* 薄紫 */
-  margin-bottom: 10px;        /* 縦間隔 */
+
+ width: 400px;
+
+ height: 100px;
+
+ background-color: #e5dcf0;  /* 薄紫 */
+
+ position: relative;     /* 元の位置からずらす */
+
+ margin-bottom: 0;      /* 上下の隙間をなくす */
+
 }
 
-/* 2番目と3番目を左にずらす */
+
+
+/* 横方向だけずらす */
+
+#bottom-child01 {
+
+ left: 0;
+
+}
+
+
+
 #bottom-child02 {
-  position: relative;
-  left: 200px;
+
+ left: 200px;
+
 }
 
+
+
 #bottom-child03 {
-  position: relative;
-  left: 400px;
+
+ left: 400px;
+
+}
+
+
 }
