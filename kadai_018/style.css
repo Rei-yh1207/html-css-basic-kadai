@@ -44,6 +44,17 @@
   left: 100px;
 }
 
+#middle-child02 {
+  top: 300px;
+  left: 300px;
+}
+
+#middle-child03 {
+  top: 500px;
+  left: 500px;
+}
+
+
 /* ===== Step5. 一番下の図形へのスタイル適用（最終・階段状） ===== */
 
 
@@ -105,8 +116,5 @@
 #bottom-child03 {
 
  left: 400px;
-
-}
-
 
 }
